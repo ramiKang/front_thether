@@ -58,7 +58,9 @@
   }
 
   #inner{
-    margin: 0;
+    width: 980px;
+    max-width: 980px;
+    margin: 0 auto;
     padding: 0;
     color: white;
     letter-spacing: -0.5px;
@@ -77,8 +79,8 @@
   }
 
   #menu > ul > li{
-    margin-right: 4em;
-    margin-left: 4em;
+    margin-right: 2em;
+    margin-left: 2em;
     list-style: none;
   }
 
@@ -118,7 +120,7 @@
   }
 
   .submenu li{
-    margin-left: -2em;
+    margin-left: -3em;
     margin-right: 4em;
     list-style: none;
   }

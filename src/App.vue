@@ -1,6 +1,8 @@
 <template>
     <Header></Header>
-    <router-view/>
+    <section>
+      <router-view></router-view>
+    </section>
     <Footer></Footer>
 </template>
 
@@ -15,9 +17,16 @@ export default {
     Footer
   }
 }
+
+
+
 </script>
 
 <style>
+section{
+  margin-top: 80px;
+}
+
 #app{
   width: 100%;
   height: 100%;
