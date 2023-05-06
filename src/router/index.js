@@ -3,9 +3,11 @@ import {createRouter,createWebHistory} from 'vue-router'
 // 연결할 컴포넌트들
 import Index from '../Index'
 import QnaMain from '../components/qna/QnaMain'
+import QnaInsert from '../components/qna/QnaInsert'
 // 라우터 설계
 const routes=[
   {path:'/',component:Index},
+  {path:'/qna/insert',component:QnaInsert},
   {path:'/qna',component:QnaMain}
 ]
 
