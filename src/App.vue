@@ -25,26 +25,6 @@ export default {
 </script>
 
 <style>
+@import "./assets/css/common.css";
 
-*{
-  box-sizing: border-box;
-}
-
-#section{
-  margin-top: 80px;
-  width: 100%;
-  height: auto;
-}
-
-#cen{
-  width: 980px;
-  max-width: 980px;
-  margin: 0 auto;
-  height: 100%;
-  background-color: red;
-}
-#app{
-  width: 100%;
-  height: 100%;
-}
 </style>
