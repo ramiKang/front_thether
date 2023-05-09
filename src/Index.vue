@@ -6,7 +6,7 @@
       <div class="ranking-movie">
         <a href="#">
         <img src="./assets/sample/poster/john.jpg">
-        <div class="ranking-num"><h1>1</h1></div>
+        <div class="ranking-num"><i class=""></i></div>
         <div class="hover-movie">
           <div class="summary">설명설명</div>
           <div class="booking-btn-area">
@@ -45,23 +45,6 @@
         </div>
         </a>
       </div>
-
-      <!--
-        <div class="ranking-movie">
-        <a href="#">
-        <img src="{{ 이미지 url }}">
-        <div class="ranking-num"><h1>1</h1></div>
-        <div class="hover-movie">
-          <div class="summary">{{ 영화.info }}</div>
-          <div class="booking-btn-area">
-            <button class="booking-btn">
-              예매하기
-            </button>
-          </div>
-        </div>
-        </a>
-      </div>
-      -->
     </div>
   </div>
 
@@ -282,9 +265,31 @@
 </template>
 
 <script>
+import axios from 'axios';
+import {ref} from 'vue'
+
 export default{
   name:"Index",
+  data:()=>{
+      return{
+        movieList:[],
+      }
+  },
+  mounted(){
+    axios.get("http://127.0.0.1:8000/api/v1/movie")
+      .then(response=>{
+        if(response.status === 200){
+          this.movieList = response.data;
+
+          console.log(this.movieList)
+        }
+      })
+      .catch(response=>{
+        console.log("ㅅㅂ 실패함")
+      });
+  }
 }
+
 </script>
 
 <style>
