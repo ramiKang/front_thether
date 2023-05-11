@@ -58,3 +58,19 @@ textarea{
   width: 24px;
   height: 24px;
 }
+
+/*title-area*/
+.title-area{
+  border-bottom: 3px solid white;
+}
+
+.title-area h1{
+  font-size: 3em;
+  margin: 20px 0px;
+}
+
+.title-area .notice{
+  color: rgb(208, 208, 208);
+  font-size: 1.3em;
+  margin: 20px 0px;
+}

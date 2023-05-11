@@ -211,11 +211,12 @@
   .qna-section{
     color:white;
     width: 100%;
-    min-height: 100vh;
+    min-height: 700px;
     background-color: rgb(15, 15, 15);
     padding: 20px 20px;
   }
 
+  /*
   .title-area{
     border-bottom: 3px solid white;
   }
@@ -230,4 +231,5 @@
     font-size: 1.3em;
     margin: 20px 0px;
   }
+  */
   </style>

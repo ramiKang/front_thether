@@ -4,9 +4,11 @@ import {createRouter,createWebHistory} from 'vue-router'
 import Index from '../Index'
 import QnaMain from '../components/qna/QnaMain'
 import QnaInsert from '../components/qna/QnaInsert'
+import MovieMain from '../components/movie/MovieMain'
 // 라우터 설계
 const routes=[
   {path:'/',component:Index},
+  {path:'/movie',component:MovieMain},
   {path:'/qna/insert',component:QnaInsert},
   {path:'/qna',component:QnaMain}
 ]
